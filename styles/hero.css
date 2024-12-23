@@ -33,9 +33,9 @@ section.hero {
 }
 
 & h1 span {
-  /*border: 1px solid red;*/
+  
   display: block;
-  animation: slideUp 6s infinite ease;
+  animation: slideUp 5s 2s infinite ease;
 }
 
 /* buttons */
@@ -87,8 +87,6 @@ section.hero {
   max-width: 30.5rem;
   height: 30.5rem;
 
-  border: 2px deeppink solid;
-
  & .content {
  
 width: 100%;
@@ -133,13 +131,19 @@ position: relative;
   right: 0;
   bottom: 35%;
 
-  
+  transform: translateX(400px);
+  animation: slideIn 2.2s 800ms ease both;
 }
 
  }
 }
 
 @keyframes slideIn {
+50% {
+
+  transform: translateX(-20px);
+}
+
   100% {
     transform: translateX(0);
   }
